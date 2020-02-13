@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Distancia entre dos puntos</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1 class="text-center mt-2">Distancia entre dos puntos</h1>
+
+    <div class="container">
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-12">
+            <label for="" class="col-12">Punto A</label>
+            <label for="">Ingresa x1</label>
+            <input id="punto1" type="number" class="form-control" />
+            <label for="">Ingresa y1</label>
+            <input id="punto2" type="number" class="form-control" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <label for="" class="col-12">Punto B</label>
+            <label for="">Ingresa x2</label>
+            <input id="punto3" type="number" class="form-control" />
+            <label for="">Ingresa y2</label>
+            <input id="punto4" type="number" class="form-control" />
+          </div>
+        </div>
+
+        <div class="row">
+          <button class="btn btn-ouside-info mt-3 form-control" id="IdCalcular">
+            Distancia puntos
+          </button>
+          <button class="btn btn-ouside-info mt-3 form-control" id="Limpiar">Limpiar Datos</button>
+        </div>
+
+        <div class="row">
+          <div class="alert alert-primary mt-3 form-control" id="ImpriResultado">
+            Distancia entre dos puntos
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./../Javascript/App.js"></script>
+  </body>
+</html>
