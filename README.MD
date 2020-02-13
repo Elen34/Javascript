@@ -1,4 +1,4 @@
-# Repositorio donde se almacenan los archivos typescript
+# Repositorio donde se almacenan los archivos typescript y Javascript
 
 
-Se realiza practicas typescript
+Se realiza practicas typescript y Javascript
