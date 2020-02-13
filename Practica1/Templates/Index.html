@@ -13,17 +13,23 @@
     />
   </head>
   <body>
-    <h1 class="text-center mt-2">Aplicación 1</h1>  <!--textcenter mt2 sirve para centrar y margen 2 para h1-->
-    
+    <h1 class="text-center mt-2">Suma de dos números</h1>
+    <!--textcenter mt2 sirve para centrar y margen 2 para h1-->
+
     <div class="container">
       <div class="jumbotron">
-
         <div class="row">
-           <div class="col-12"> <!--bootstrap se divide en 12 columnas -->
-              <div class="form-group">
-                <label for="">Teclea el primer número</label>
-                <input id="ipnumero1" type="number" class="form-control" placeholder="Digite el primer numero a sumar">
-              </div>
+          <div class="col-12">
+            <!--bootstrap se divide en 12 columnas -->
+            <div class="form-group">
+              <label for="">Teclea el primer número</label>
+              <input
+                id="ipnumero1"
+                type="number"
+                class="form-control"
+                placeholder="Digite el primer numero a sumar"
+              />
+            </div>
           </div>
         </div>
 
@@ -31,21 +37,30 @@
           <div class="col-12">
             <div class="form-group">
               <label for="">Teclea el segundo número</label>
-              <input id="ipnumero2" type="number" class="form-control" placeholder="Digite el segundo número">
+              <input
+                id="ipnumero2"
+                type="number"
+                class="form-control"
+                placeholder="Digite el segundo número a sumar"
+              />
             </div>
           </div>
         </div>
 
         <div class="row">
           <div class="col-12">
-            <button class="btn btn-outline-info btn-block" id="btnCalcular">Calcular resultado</button>
+            <button class="btn btn-outline-info btn-block" id="btnCalcular">
+              Calcular resultado
+            </button>
           </div>
         </div>
 
-        <div id="ImprimirResultado" class="alert alert-primary mt-3" role="alert">
-          A simple primary alert—check it out!
+        <div
+          id="ImprimirResultado"
+          class="alert alert-primary mt-3"
+          role="alert">
+          Suma
         </div>
-
       </div>
     </div>
 
