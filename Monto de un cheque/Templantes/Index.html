@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pago Cheque</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1 class="text-center mt-2">Monto de cheque</h1>
+
+    <div class="container">
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-12">
+            <label for=""
+              >Ingresa los dias que el empleado estara en la ciudad de
+              Monterrey</label
+            >
+            <input id="fueraciudad" type="number" class="form-control" id="">
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <label for="">Ingresa el costo de hotel por noche</label>
+                <input id="costohotel" type="number" class="form-control" id="">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <label for="">Ingresa el costo de comida por dia</label>
+                <input id="costocomida" type="number" class="form-control" id="">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <button id="Calcularmontos" class="btn btn-outline-info form-control mt-2">Calcular Monto</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div id="idimprimir" class="alert alert-primary form-control mt-2">Monto de cheque de un empleado</div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script src="./../Javascript/App.js"></script>
+  </body>
+</html>
