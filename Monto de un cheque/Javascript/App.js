@@ -13,7 +13,7 @@ function calcularmonto() {
   hotel = Number(document.getElementById("costohotel").value);
   comida = Number(document.getElementById("costocomida").value);
 
-  cheque = hotel * diasfuera + comida * diasfuera + adicional;
+  cheque = (hotel * diasfuera) + (comida * diasfuera) + adicional;
 
   let imprimir = document.getElementById("idimprimir");
   imprimir.innerText = cheque;

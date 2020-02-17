@@ -12,44 +12,68 @@
     />
   </head>
   <body>
-    <h1 class="text-center mt-2">Monto de cheque</h1>
+    <h1 class="text-center mt-2">Monto de cheque de un empleado</h1>
 
     <div class="container">
       <div class="jumbotron">
         <div class="row">
-          <div class="col-12">
-            <label for=""
-              >Ingresa los dias que el empleado estara en la ciudad de
-              Monterrey</label
-            >
-            <input id="fueraciudad" type="number" class="form-control" id="">
+          <div class="col-6">
+            <div class="form-group">
+              <label for=""
+                >Ingresa los dias en que el empleado estara en la ciudad de
+                Monterrey</label
+              >
+              <input
+                id="fueraciudad"
+                type="number"
+                class="form-control"
+                placeholder="Digite los dias fuera de la ciudad"
+              />
+            </div>
+          </div>
+
+          <div class="col-6">
+            <label for="">Ingresa el costo de hotel por noche</label>
+            <input
+              id="costohotel"
+              type="number"
+              class="form-control"
+              placeholder="Digite el costo por noche"
+            />
           </div>
         </div>
 
         <div class="row">
-            <div class="col-12">
-                <label for="">Ingresa el costo de hotel por noche</label>
-                <input id="costohotel" type="number" class="form-control" id="">
-            </div>
+          <div class="col-12 text-center">
+            <label for=""
+              >Ingresa el costo de comida por dia</label
+            >
+            <input
+              id="costocomida"
+              type="number"
+              class="form-control"
+              placeholder="Digite el costo de comida por dia"
+            />
+          </div>
         </div>
 
         <div class="row">
-            <div class="col-12">
-                <label for="">Ingresa el costo de comida por dia</label>
-                <input id="costocomida" type="number" class="form-control" id="">
-            </div>
+          <div class="col-12 mt-3">
+            <button
+              id="Calcularmontos"
+              class="btn btn-outline-info btn-block"
+            >
+              Calcular Monto de un cheque
+            </button>
+          </div>
         </div>
 
         <div class="row">
-            <div class="col-12">
-                <button id="Calcularmontos" class="btn btn-outline-info form-control mt-2">Calcular Monto</button>
+          <div class="col-12 mt-3">
+            <label for="">El monto de un cheque de un empleado es:</label>
+            <div id="idimprimir" class="alert alert-primary" role="alert">
             </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12">
-                <div id="idimprimir" class="alert alert-primary form-control mt-2">Monto de cheque de un empleado</div>
-            </div>
+          </div>
         </div>
       </div>
     </div>
