@@ -12,41 +12,47 @@
     />
   </head>
   <body>
+    <h1 class="text-center mt-2">Calculo del semiperimetro de un triangulo</h1>
 
-    <h1 class="text-center mt-2">Calculo Semiperimetro de un triangulo</h1>
+    <div class="container">
+      <div class="jumbotron mt-2">
+        <div class="row">
+          <div class="col-4">
+              <div class="form-group">
+                  <label for="">Ingresa el primer lado del triangulo</label>
+                  <input id="primerlado" type="number"  placeholder="1er lado" />
+              </div>
+          </div>
+          <div class="col-4">
+              <div class="form-group">
+                  <label for="">Ingresa el segundo lado del triangulo</label>
+                  <input id="segundolado" type="number" placeholder="2do lado" />
+              </div>
+          </div>
+          <div class="col-4">
+            <label for="">Ingresa el tercer lado del triangulo</label>
+            <input id="tercerlado" type="number" placeholder="3er lado"/>
+          </div>
+        </div>
 
-     <div class="container">
-         <div class="jumbotron">
-             <div class="row">
-                 <div class="col-12">
-                     <label for="">Ingresa el primer lado del triangulo</label>
-                     <input id="primerlado" type="number" class="form-control">
-                 </div>
-                 <div class="col-12">
-                     <label for="">Ingresa el segundo lado del triangulo</label>
-                     <input id="segundolado" type="number" class="form-control">
-                 </div>
-                 <div class="col-12">
-                     <label for="">Ingresa el tercer lado del triangulo</label>
-                     <input id="tercerlado" type="number" class="form-control">
-                 </div>
-             </div>
+        <div class="row">
+          <div class="col-12">
+            <button id="Calculo" class="btn btn-outline-info btn-block">
+              Calcular semiperimetro
+            </button>
+          </div>
+        </div>
 
-            <div class="row">
-                <div class="col-12">
-                    <button id="Calculo" class="btn btn-outline-info mt-2 form-control">Calculo de area</button>
-                </div>
+        <div class="row">
+            <div class="col-12">
+                <label class="mt-2" for="">El resultado del semiperimetro es:</label>
+                <div id="Resultado" class="alert alert-primary" role="alert">
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-            <div class="row">
-                <div id="Resultado" class="alert alert-primay form-control mt-2">
-                    Calculo area
-                </div>
-            </div>
-         </div>
-     </div>
-     
-     
-     <script src="./../Javascript/App.js"></script>
+    <script src="./../Javascript/App.js"></script>
   </body>
 </html>
