@@ -15,25 +15,37 @@
     <h1 class="text-center mt-2">Medidas de telas</h1>
 
     <div class="container">
-      <div class="jumbotron">
+      <div class="jumbotron mt-2">
         <div class="row">
           <div class="col-12">
-            <label for="">Ingresa la cantidad de tela</label>
-            <input id="datotelas" type="number" class="form-control" />
+            <div class="form-group">
+              <label for="">Ingresa la cantidad de telas en metros</label>
+              <input
+                id="datotelas"
+                type="number"
+                class="form-control"
+                placeholder="Digite la cantidad de telas en metros"
+              />
+            </div>
           </div>
         </div>
 
         <div class="row">
-          <button
-            id="Conversion"
-            class="btn btn-outline-info mt-2 form-control">
-            Calculo en pulgadas
-          </button>
+          <div class="col-12">
+            <button
+              id="Conversion"
+              class="btn btn-outline-success btn-block"
+            >
+              Calcular en pulgadas
+            </button>
+          </div>
         </div>
 
         <div class="row">
-          <div id="resultado" class="alert alert-primary mt-2 form-control">
-            Telas en pulgadas
+          <div class="col-12">
+            <label class="mt-2" for="">La conversion a pulgadas es:</label>
+            <div id="resultado" class="alert alert-success" role="alert">
+            </div>
           </div>
         </div>
       </div>
