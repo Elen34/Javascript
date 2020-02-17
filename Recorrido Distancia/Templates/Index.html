@@ -12,27 +12,41 @@
     />
   </head>
   <body>
-    <h1 class="text-center mt-2">Recorrido Distancia de una automovil</h1>
+    <h1 class="text-center mt-2">Recorrido distancia de un automovil</h1>
 
     <div class="container">
-      <div class="jumbotron">
+      <div class="jumbotron mt-3">
         <div class="row">
           <div class="col-12">
-            <label for="">Rapidez recorrida en m/s</label>
-            <input id="rapreco" type="number" class="form-control" />
+            <div class="form-group">
+              <label for="">Rapidez recorrida en m/s</label>
+              <input
+                id="rapreco"
+                type="number"
+                class="form-control"
+                placeholder="Digite la rapidez recorrida en m/s"
+              />
+            </div>
           </div>
         </div>
 
         <div class="row">
           <div class="col-12">
-            <label for="">Tiempo recorrido en seg</label>
-            <input id="tiemporec" type="number" class="form-control" />
+            <div class="form-group">
+              <label for="">Tiempo recorrido en seg</label>
+              <input
+                id="tiemporec"
+                type="number"
+                class="form-control"
+                placeholder="Digite el tiempo recorrido en seg"
+              />
+            </div>
           </div>
         </div>
 
         <div class="row">
           <div class="col-12">
-            <button class="btn btn-outline-info form-control mt-3" id="CalcularDistancia">
+            <button class="btn btn-success btn-block" id="CalcularDistancia">
               Calcular la distancia
             </button>
           </div>
@@ -40,12 +54,12 @@
 
         <div class="row">
           <div class="col-12">
+            <label class="mt-2" for="">La distancia recorrida es:</label>
             <div
               id="Imprimirdistancia"
-              class="alert alert-primary form-control mt-3"
-            >
-              Calcular la distancia
-            </div>
+              class="alert alert-success mt-2"
+              role="alert"
+            ></div>
           </div>
         </div>
       </div>
