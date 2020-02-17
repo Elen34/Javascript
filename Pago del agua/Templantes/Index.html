@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pago de agua</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1 class="text-center mt-2">Medida de una alberta</h1>
+
+    <div class="container">
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-12">
+            <label for="">Ingresa un lado de una alberca</label>
+            <input id="lados" type="number" class="form-control" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <label for="">Ingresa el ancho de una alberca</label>
+            <input id="anchos" type="number" class="form-control" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <label for="">Ingresa la profundidad</label>
+            <input id="profundiadlit" type="number" class="form-control" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <label for=""
+              >Ingresa los litros a usar para llenar a una alberca</label
+            >
+            <input id="litros" type="number" class="form-control" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <button id="Calculo" class="btn btn-outline-line mt-2 form-control">
+              Calcular el pago de agua
+            </button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <div
+              id="imprimirlitros"
+              class="alert alert-primary form-control mt-2">
+              El uso de agua en litros
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./../Javascript/App.js"></script>
+  </body>
+</html>
