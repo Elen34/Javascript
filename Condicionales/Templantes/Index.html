@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Condicionales</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="text-center">Número mayor</h1>
+
+        <div class="text-center  row mt-4">
+          <div class="col-6">
+            <div class="form-group">
+              <label for="">Ingresa el numero A</label>
+              <input
+                type="number"
+                id="inpNumero1"
+                class="form-control"
+                placeholder="Digite el numero A"
+              />
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="form-group">
+              <label for="">Ingresa el numero B</label>
+              <input
+                type="number"
+                id="inpNumero2"
+                class="form-control"
+                placeholder="Digite el numero B"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <button class="btn btn-outline-success btn-block" id="btnComparar">
+              Comparar Numeros
+            </button>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-12">
+            <label for="">El numero mayor es:</label>
+            <div class="alert alert-success" role="alert" id="Printalert"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./../Javascript/App.js"></script>
+  </body>
+</html>
