@@ -17,15 +17,17 @@
     <div class="container">
       <div class="jumbotron mt-3">
         <div class="row">
-          <div class="col-2">
-            <label for="">Ingresa la matricula</label>
-            <input
-              id="matriculas"
-              type="number"
-              class="col-2"
-              placeholder="Matricula"
-            />
-          </div>
+          <div class="col-12">
+            <div class="form-group">
+              <label for="">Ingresa una matricula</label>
+              <input
+                id="matriculas"
+                type="number"
+                class="form-control"
+                placeholder="Matricula"
+              />
+            </div>
+            </div>
         </div>
 
         <div class="row">
@@ -35,60 +37,66 @@
               <input
                 id="cal1"
                 type="number"
-                class="form-control"
+                class="col-4"
                 placeholder="Digita la primera calificación"
               />
             </div>
             <div class="form-group">
-              <label for="">Ingresa la primera calificacion</label>
+              <label for="">Ingresa la segunda calificacion</label>
               <input
                 id="cal2"
                 type="number"
-                class="form-control"
-                placeholder="Digita la primera calificación"
+                class="col-4"
+                placeholder="Digita la segundo calificación"
               />
             </div>
             <div class="form-group">
-              <label for="">Ingresa la primera calificacion</label>
+              <label for="">Ingresa la tercera calificacion</label>
               <input
                 id="cal3"
                 type="number"
-                class="form-control"
-                placeholder="Digita la primera calificación"
+                class="col-4"
+                placeholder="Digita la tercera calificación"
               />
             </div>
             <div class="form-group">
-              <label for="">Ingresa la primera calificacion</label>
+              <label for="">Ingresa la cuarta calificacion</label>
               <input
                 id="cal4"
                 type="number"
-                class="form-control"
-                placeholder="Digita la primera calificación"
+                class="col-4"
+                placeholder="Digita la cuarta calificación"
               />
             </div>
             <div class="form-group">
-              <label for="">Ingresa la primera calificacion</label>
+              <label for="">Ingresa la quinta calificacion</label>
               <input
                 id="cal5"
                 type="number"
-                class="form-control"
-                placeholder="Digita la primera calificación"
+                class="col-4"
+                placeholder="Digita la quinta calificación"
               />
             </div>
           </div>
         </div>
 
         <div class="row">
-          <button id="botton promedio" class="btn btn-outline-info">
-            Calcular promedio
+            <div class="col-12">
+              <button id="botton promedio" class="btn btn-outline-success btn-block">
+                Calcular promedio
+            </div>
           </button>
         </div>
 
-        <div id="Imprimirmatricula" class="alert alert-primary mt-2 col-5">
-          Matricula
+        <div class="row">
+          <div class="col-12">
+            <label for="" class="mt-3">La matricula es:</label>
+            <div id="Imprimirmatricula" class="alert alert-success" role="alert"></div>
+            <label for="">El promedio del alumno es:</label>
+            <div id="FinalAverage" class="alert alert-success" role="alert"></div>
+          </div>
+          </div>
         </div>
-        <div id="FinalAverage" class="alert alert-primary col-5">Promedio</div>
-      </div>
     </div>
 
     <script src="./../Javascript/App.js"></script>
