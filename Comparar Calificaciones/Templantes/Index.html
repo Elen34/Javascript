@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comparacion Calificaciones</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="text center">Comparar dos calificaciones</h1>
+        <div class="row">
+          <div class="col-12">
+            <div class="form-group">
+              <label for="">Ingresa una calificacion</label>
+              <input
+                type="number"
+                id="Cal1"
+                placeholder="Digita una calificacion"
+                class="form-control"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-12">
+            <button class="btn btn-outline-success btn-block" id="btnComparar">
+              Calcular Calificacion
+            </button>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-12">
+            <label for="">La calificacion mayor es:</label>
+            <div
+              class="alert alert-success"
+              role="alert"
+              id="Imprimiralert"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./../Javascript/App.js"></script>
+    <audio src="./../Audio/reprobado.mp3" id="audioreprobado"></audio>
+  </body>
+</html>
