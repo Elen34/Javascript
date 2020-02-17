@@ -12,44 +12,62 @@
     />
   </head>
   <body>
-    <h1 class="text-center mt-3">Numero de respuestas</h1>
+    <h1 class="text-center mt-3">Número de respuestas</h1>
     <div class="container">
-        <div class="jumbotron">
-            <div class="row">
-                <div class="col-12">
-                    <label for="">Ingrese la respuestas correctas</label>
-                    <input type="number" class="form-control" id="Respcorrectas">
-                </div>
+      <div class="jumbotron mt-3">
+        <div class="row">
+          <div class="col-6">
+            <div class="form-group">
+              <label for="">Ingrese el numero de respuestas correctas</label>
+              <input
+                type="number"
+                class="form-control"
+                id="Respcorrectas"
+                placeholder="Digite el numero de respuestas correctas"
+              />
             </div>
+          </div>
 
-            <div class="row">
-                <div class="col-12">
-                    <label for="">Ingrese las respuestas incorrectas</label>
-                    <input type="number" class="form-control" id=Respincorrectas>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12">
-                    <label for="">Ingrese las respuestas en blanco</label>
-                    <input type="number" class="form-control" id=Respblanco>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12 mt-3">
-                    <button class="btn btn-outline-info form-control" id="calculoresp">Suma de respuestas</button>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12">
-                    <div class="alert alert-primary mt-3 form-control" id="Imprimirresult">
-                        Suma de todas las respuestas
-                </div>
-                </div>
-            </div>
+          <div class="col-6">
+            <label for="">Ingrese el numero de respuestas incorrectas</label>
+            <input
+              type="number"
+              class="form-control"
+              id="Respincorrectas"
+              placeholder="Digite el numero de respuestas incorrectas"
+            />
+          </div>
         </div>
+
+        <div class="row">
+          <div class="col-12">
+              <div class="text-center form-group">
+                  <label for="">Ingrese el numero de respuestas en blanco</label>
+                  <input type="number" class="form-control" id="Respblanco" placeholder="Digite el numero de respuestas en blanco"/>
+              </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 mt-3">
+            <button class="btn btn-outline-success btn-block" id="calculoresp">
+              Calcular la suma de las respuestas
+            </button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 mt-3">
+              <label for="">El numero de la suma de las respuestas es:</label>
+            <div
+              class="alert alert-success" role="alert"
+              id="Imprimirresult"
+            >
+              Suma de todas las respuestas
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="./../Javascript/App.js"></script>
   </body>
