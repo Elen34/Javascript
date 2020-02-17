@@ -18,12 +18,34 @@
     <div class="container">
       <div class="jumbotron mt-2">
         <div class="row">
-          <div class="col-12">
+          <div class="col-4">
             <div class="form-group">
-              <label for="">Ingrese los metros cuadrados</label>
+              <label for="">Ingrese el largo de la pared</label>
               <input
+                id="largewall"
                 type="number"
-                class="form-control"
+                placeholder="Ingrese el largo de la pared"
+              />
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="form-group">
+              <label for="">Ingrese el ancho de la pared</label>
+              <input
+                id="widthwall"
+                type="number"
+                placeholder="Digite los metros cuadrados"
+              />
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="form-group">
+              <label for="">Ingrese el ancho de la pared</label>
+              <input
+                id="cost"
+                type="number"
                 placeholder="Digite los metros cuadrados"
               />
             </div>
@@ -32,27 +54,14 @@
 
         <div class="row">
           <div class="col-12">
-            <div class="form-group">
-              <label for="">Ingrese la cantidad de pintura</label>
-              <input
-                type="number"
-                class="form-control"
-                placeholder="Digite los metros cuadrados"
-              />
-            </div>
+            <div id="Calcularmetros" class="btn btn-outline-info form-control mt-2">Calcular cotizacion </div>
           </div>
         </div>
 
-        <div class="row">
-          <div class="col12">
-            <div class="btn btn-outline-info">Calcular mano de obra</div>
-          </div>
-        </div>
-
-        <div class="alert alert primary">Calculo en metros</div>
+        <div id="imprimirresul" class="alert alert primary form-control mt-2">Calculo en metros</div>
       </div>
     </div>
 
-    <script src="./../JS/App.js"></script>
+    <script src="./../Javascript/App.js"></script>
   </body>
 </html>
