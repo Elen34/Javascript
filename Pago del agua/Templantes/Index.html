@@ -12,54 +12,72 @@
     />
   </head>
   <body>
-    <h1 class="text-center mt-2">Medida de una alberta</h1>
+    <h1 class="text-center mt-2">Pago de uso del agua</h1>
 
     <div class="container">
       <div class="jumbotron">
-        <div class="row">
-          <div class="col-12">
-            <label for="">Ingresa un lado de una alberca</label>
-            <input id="lados" type="number" class="form-control" />
+        <div class="text-center row">
+          <div class="col-6">
+            <div class="form-group">
+              <label for="">Ingresa un lado de una alberca</label>
+              <input
+                id="lados"
+                type="number"
+                class="form-control"
+                placeholder="Digita un lado de una alberca"
+              />
+            </div>
           </div>
-        </div>
 
-        <div class="row">
-          <div class="col-12">
+          <div class="col-6">
             <label for="">Ingresa el ancho de una alberca</label>
-            <input id="anchos" type="number" class="form-control" />
+            <input
+              id="anchos"
+              type="number"
+              class="form-control"
+              placeholder="Digita el ancho de una alberca"
+            />
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-12">
-            <label for="">Ingresa la profundidad</label>
-            <input id="profundiadlit" type="number" class="form-control" />
-          </div>
+        <div class="text-center row">
+          <div class="col-6">
+            <div class="form-group">
+              <label for="">Ingresa la profundidad de una alberca</label>
+              <input
+                id="profundiadlit"
+                type="number"
+                class="form-control"
+                placeholder="Digita la profundidad de una alberca"
+              />
+            </div>
+            </div>
+
+            <div class="col-6">
+              <label for=""
+                >Ingresa los litros a usar para llenar a una alberca</label
+              >
+              <input id="litros" type="number" class="form-control" placeholder="Digita los litros a usar para llenar a una alberca"/>
+            </div>
         </div>
+
 
         <div class="row">
           <div class="col-12">
-            <label for=""
-              >Ingresa los litros a usar para llenar a una alberca</label
-            >
-            <input id="litros" type="number" class="form-control" />
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-12">
-            <button id="Calculo" class="btn btn-outline-line mt-2 form-control">
+            <button id="Calculo" class="btn btn-outline-success btn-block">
               Calcular el pago de agua
             </button>
           </div>
         </div>
 
-        <div class="row">
+        <div class= "row mt-2">
           <div class="col-12">
+            <label for="">El uso de agua en litros es:</label>
             <div
               id="imprimirlitros"
-              class="alert alert-primary form-control mt-2">
-              El uso de agua en litros
+              class="alert alert-success" role="alert"
+            >
+          
             </div>
           </div>
         </div>

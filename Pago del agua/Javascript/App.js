@@ -14,7 +14,7 @@ function calcularlitro() {
   profulitros = Number(document.getElementById("profundiadlit").value);
   litros =  Number(document.getElementById('litros').value);
 
-  resultado = litros * (lado * ancho * profulitros);
+  resultado = (litros * (lado * ancho * profulitros));
 
   let imprimir = document.getElementById("imprimirlitros");
   imprimir.innerText = resultado;
