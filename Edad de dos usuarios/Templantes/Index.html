@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edad de dos usuarios</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="text-center">Calculo de la edad mayor de dos usuarios</h1>
+        <div class="row">
+          <div class="col-6">
+            <div class="form-group">
+              <label for="">Ingresa el nombre del usuario</label>
+              <input
+                type="text"
+                id="Usuario1"
+                placeholder="Digite el nombre del usuario"
+                class="form-control"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="">Ingresa la edad del usuario</label>
+              <input
+                type="number"
+                id="Edadone"
+                placeholder="Digite la edad del usuario"
+                class="form-control"
+              />
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="form-group">
+              <label for="">Ingresa el nombre del otro usuario</label>
+              <input
+                type="text"
+                id="Usuario2"
+                placeholder="Digite el nombre del usuario"
+                class="form-control"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="">Ingresa la edad del usuario</label>
+              <input
+                type="number"
+                placeholder="Digite la edad del usuario"
+                class="form-control"
+                id="Edadtwo"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <button id="Calcularedad" class="btn btn-outline-success btn-block">
+              Calcular la edad mayor
+            </button>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-12">
+            <label for="">El usuario con mayor edad es:</label>
+            <div
+              class="alert alert-success"
+              role="alert"
+              id="Imprimirnombremayor"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./../Javascript/App.js"></script>
+  </body>
+</html>
