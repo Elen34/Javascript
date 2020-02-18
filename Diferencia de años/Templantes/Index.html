@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diferencia de años</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="text-center">Diferencia de edad entre dos hermanos</h1>
+        <div class="row">
+          <div class="col-12">
+            <div class="form-group">
+              <label for="">Ingresa la edad de un hermano</label>
+              <input
+                type="number"
+                id="edadherm1"
+                placeholder="Digita la edad de un hermano"
+                class="form-control"
+
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <div class="form-group">
+              <label for="">Ingresa la edad del segundo hermano</label>
+              <input
+                type="number"
+                id="edadherm2"
+                placeholder="Digita la edad del segundo hermano"
+                class="form-control"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <button class="btn btn-danger btn-block" id="idcalculardif">Calcular la diferencia de años enter hermanos</button>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-12">
+                <label for="">La diferencia de años enter hermanos es:</label>
+                <div class="alert alert-danger btn-block" id="imprimirdifedad"></div>
+                <div class="alert alert-danger btn-block" id="restaedad"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./../Javascript/App.js"></script>
+  </body>
+</html>
