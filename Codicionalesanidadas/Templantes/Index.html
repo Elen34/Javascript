@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Condicionales Anidadas</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="text-center">Comparación de tres numeros</h1>
+        <div class="row">
+          <div class="col-6">
+            <div class="form-group">
+              <label for="">Ingresa el primer numero</label>
+              <input
+                type="number"
+                placeholder="Digita el primer numero"
+                class="form-control"
+                id="1num"
+              />
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-group">
+              <label for="">Ingresa el segundo numero</label>
+              <input
+                type="number"
+                placeholder="Digita el segundo numero"
+                class="form-control"
+                id="2num"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center row">
+          <div class="col-12">
+            <div class="form-group">
+              <label for="">Ingresa el tercer numero</label>
+              <input
+                type="number"
+                placeholder="Digita el tercer numero"
+                class="form-control"
+                id="3num"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <button
+              class="btn btn-outline-info btn-block"
+              id="Comparacionnumeros"
+            >
+              Calcular
+            </button>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-12">
+            <label for="">El numero mayor es:</label>
+            <div class="alert alert-info" role="alert" id="imprimirmayor"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./../Javascript/App.js"></script>
+  </body>
+</html>
