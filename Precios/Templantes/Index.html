@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Precios</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="text-center">Articulos de compra</h1>
+        <div class="row">
+          <div class="col-6">
+            <div class="form-group">
+              <label for="">Ingresa el nombre del articulo</label>
+              <input
+                type="text"
+                placeholder="Digita el nombre del articulo"
+                class="form-control"
+                id="Nomarticulo"
+              />
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-group">
+              <label for="">Ingresa la clave del articulo</label>
+              <input
+                type="number"
+                placeholder="Digita la clave del articulo"
+                class="form-control"
+                id="clavearticulo"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center row">
+          <div class="col-12">
+            <div class="form-group">
+              <label for="">Ingresa el precio original de los productos</label>
+              <input
+                type="number"
+                placeholder="Digita el precio original de los productos"
+                class="form-control"
+                id="precioarticulo"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <button class="btn btn-info btn-block" id="Calculardescuento">
+              Calcular descuento
+            </button>
+          </div>
+        </div>
+
+        <div class="row mt-2">
+          <div class="col-12">
+            <label for="">El nombre del articulo es:</label>
+            <div class="alert alert-info" role="alert" id="nomart"></div> 
+          <label for="">La clave del articulo es:</label>
+          <div class="alert alert-info" role="alert" id="claveart"></div>
+        <label for="">El precio original del articulo es:</label>
+        <div class="alert alert-info" role="alert" id="originprice"></div>
+     
+      <label for="">El precio del articulo con descuento es:</label>
+      <div class="alert alert-info" role="alert" id="descart"></div>
+    </div>
+  </div>
+  </div>
+</div>
+    <script src="./../Javascript/App.js"></script>
+  </body>
+</html>
