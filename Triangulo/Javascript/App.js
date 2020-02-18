@@ -28,13 +28,13 @@ function tipofigura() {
   if (aux == long3) {
     console.log("no");
     imprimirtipofig.innerText = "No se forma un triangulo";
-    imprimirtipotriangulo.innerText = '';
+    imprimirtipotriangulo.innerText = "";
   } else if (aux2 == long2) {
     imprimirtipofig.innerText = "No se forma un triangulo";
-    imprimirtipotriangulo.innerText = '';
+    imprimirtipotriangulo.innerText = "";
   } else if (aux3 == long1) {
     imprimirtipofig.innerText = "No se forma un triangulo";
-    imprimirtipotriangulo.innerText = '';
+    imprimirtipotriangulo.innerText = "";
   } else {
     imprimirtipofig.innerText = "Si es un triangulo";
   }
