@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Triangulo</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+          <h1 class="text-center">Longitudes de figuras</h1>
+        <div class="row">
+          <div class="col-4">
+            <div class="form-group">
+              <label for="">Ingresa una longitud</label>
+              <input
+                type="number"
+                id="lado1"
+                placeholder="Digite una una longitud"
+                class="form-control"
+              />
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="form-group">
+              <label for="">Ingresa otra longitud</label>
+              <input
+                type="number"
+                id="lado2"
+                placeholder="Digite otra longitud"
+                class="form-control"
+              />
+            </div>
+        </div>
+
+            <div class="col-4">
+                <div class="form-group">
+                  <label for="">Ingresa la tercera longitud</label>
+                  <input
+                    type="number"
+                    id="lado3"
+                    placeholder="Digite la tercera longitud"
+                    class="form-control"
+                  />
+                </div>
+            </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <button class="btn btn-light btn-block" id="Calcularfigura">Tipo de figura</button>
+        </div>
+    </div>
+
+    <div class="row mt-2">
+        <div class="col-12">
+            <label for="">El tipo de figura es:</label>
+            <div class="alert alert-light" role="alert" id="imprimirtipofig"></div>
+            <label for="">El tipo de triangulo:</label>
+            <div class="alert alert-light" role="alert" id="imprimirtipotrian"></div>
+        </div>
+    </div>
+
+    <script src="./../Javascript/App.js"></script>
+  </body>
+</html>
