@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artículos</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron mt-5">
+        <h1 class="text-center">Precio de cuatro artículos</h1>
+        <div class="row text-center mt-5">
+          <div class="col-6">
+            <div class="form-group">
+              <label for="">Ingresa el precio de un artículo</label>
+              <input
+                type="number"
+                id="precio1"
+                placeholder="Digita el precio de un artículo"
+                class="form-control"
+              />
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="form-group">
+              <label for="">Ingresa el precio del segundo artículo</label>
+              <input
+                type="number"
+                id="precio2"
+                placeholder="Digita el precio del segundo artículo"
+                class="form-control"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-6">
+            <div class="form-group">
+              <label for="">Ingresa el precio del tercer artículo</label>
+              <input
+                type="number"
+                id="precio3"
+                placeholder="Digita el precio del tercer artículo"
+                class="form-control"
+              />
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="form-group">
+              <label for="">Ingresa el precio del cuarto artículo</label>
+              <input
+                type="number"
+                id="precio4"
+                placeholder="Digita el precio del cuarto artículo"
+                class="form-control"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-12">
+                <div class="form-group">
+                    <label for="">Ingresa el presupuesto</label>
+                    <input type="number" id="presupuesto" class="form-control" placeholder="Digita el presupuesto">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <button class="btn btn-outline-secondary btn-block" id="calcularpresupuesto">
+              Calcular presupuesto
+            </button>
+          </div>
+        </div>
+
+        <div id="imprimirpresupuesto"></div>
+      </div>
+    </div>
+    <script src="./../Javascript/App.js"></script>
+  </body>
+</html>
