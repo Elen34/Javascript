@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calificaciones</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron mt-5">
+        <h1 class="text-center">Promedio Calificaciones</h1>
+        <div class="text-center row mt-5">
+          <div class="col-6">
+            <div class="form-group">
+              <label for="">Ingresa la primera calificacion</label>
+              <input
+                type="number"
+                placeholder="Digita la primera calificacion"
+                id="cal1"
+                class="form-control"
+              />
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-group">
+              <label for="">Ingresa la segunda calificacion</label>
+              <input
+                type="number"
+                placeholder="Digita segunda calificacion"
+                id="cal2"
+                class="form-control"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="text-center row">
+          <div class="col-6">
+            <div class="form-group">
+              <label for="">Ingresa la tercera calificacion</label>
+              <input
+                type="number"
+                placeholder="Digita la tercera calificacion"
+                id="cal3"
+                class="form-control"
+              />
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-group">
+              <label for="">Ingresa la cuarta calificacion</label>
+              <input
+                type="number"
+                placeholder="Digita cuarta calificacion"
+                id="cal4"
+                class="form-control"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <button
+              class="btn btn-outline-info btn-block"
+              id="Calcularprom"
+            >Calcular promedio</button>
+          </div>
+        </div>
+
+        <div id="imprimirmenor"></div>
+        <div id="promedio"></div>
+        
+      </div>
+    </div>
+    <script src="./../Javascript/App.js"></script>
+  </body>
+</html>
