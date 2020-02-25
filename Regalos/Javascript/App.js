@@ -34,3 +34,4 @@ function comparaciondeprecios(){
 imprimir.innerHTML = divimprimir; 
 
 }
+
