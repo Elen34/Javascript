@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dias de la semana</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron mt-5">
+        <h1 class="text-center">Días de la semana</h1>
+        <div class="row text-center mt-3">
+          <div class="col-12">
+            <div class="form-group">
+                <label for="">Selecciona el día de la semana</label>
+              <select id="diasdelasemana" class="form-control"
+                > 
+                <option>Seleccionar</option>
+                <option value="1">Día 1</option>
+                <option value="2">Día 2</option>
+                <option value="3">Día 3</option>
+                <option value="4">Día 4</option>
+                <option value="5">Día 5</option>
+                <option value="6">Día 6</option>
+                <option value="7">Día 7</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <button class="btn btn-outline-info btn-block" id="calculardiasem">
+              Calcular dia de la semana
+            </button>
+          </div>
+        </div>
+
+        <div id="imprimirdia"></div>
+      </div>
+    </div>
+    <script src="./../Javascript/App.js"></script>
+  </body>
+</html>
