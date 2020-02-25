@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banquetes</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron mt-5">
+        <h1 class="text-center">Costo por persona de Banquete</h1>
+
+        <div class="row text-center mt-4">
+          <div class="col-12">
+            <div class="form-group">
+              <label for=""
+                >Ingresa la cantidad de personas en el banquete</label
+              >
+              <input
+                type="number"
+                placeholder="Digite la cantidad de personas en el banquete"
+                id="numpersonas"
+                class="form-control"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <button class="btn btn-outline-primary btn-block" id="calcularpresu">
+              Calcular el presupuesto a los clientes
+            </button>
+          </div>
+        </div>
+        <div id="printpresupuesto"></div>
+      </div>
+    </div>
+    <script src="./../Javascript/App.js"></script>
+  </body>
+</html>
