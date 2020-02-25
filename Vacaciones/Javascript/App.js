@@ -24,7 +24,6 @@ function calcularrecorridos(){
         totalcosto = (Recorridoida1 * 750) + (RecorridoRegreso1 * 750);
         divimprimir = `<div class="alert alert-secondary mt-3" role="alert"><p>El costo total para ir a México es: ${totalcosto}</p></div>`;
         
-
     }else if(estados1 == '2'){
 
         totalcosto = (Recorridoida2 * 800) + (RecorridoRegreso2 * 800);
