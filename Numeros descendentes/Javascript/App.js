@@ -14,15 +14,16 @@ function ordenarnumeros(){
 
     if(numero1 != numero2 && numero1 != numero3 && numero2 != numero3){
 
-        if(numero1 > numero2 || numero1 > numero3 || numero2 > numero3){
+        if(numero1 > numero2 && numero1 > numero3 && numero2 > numero3){
+            if(numero1 < numero2 && numero1 < numero3 && numero2 < numero3){
 
             divimprimir = `<div class="alert alert-danger mt-3" role="alert"><p>${numero1}, ${numero3}, ${numero2}</p></div>`;
             
-        }  if(numero2 > numero1 || numero2 > numero3 || numero1 > numero3){
+        }else if(numero2 > numero1 || numero2 > numero3 || numero1 > numero3){
 
             divimprimir = `<div class="alert alert-danger mt-3" role="alert"><p>${numero2}, ${numero1}, ${numero3}</p></div>`;
 
-        }  if(numero3 > numero1 || numero3 > numero2 || numero1 > numero2){
+        }else  if(numero3 > numero1 || numero3 > numero2 || numero1 > numero2){
 
             divimprimir = `<div class="alert alert-danger mt-3" role="alert"><p>${numero3}, ${numero2}, ${numero1}</p></div>`;
     } 
@@ -31,5 +32,6 @@ function ordenarnumeros(){
         divimprimir = `<div class="alert alert-danger mt-3" role="alert"><p>Imprima sólo numeros diferentes</p></div>`;     
       
     }
+
     imprimir.innerHTML = divimprimir;
 }
