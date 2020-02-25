@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vacaciones</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron mt-5">
+        <h1 class="text-center">Lugar a vacacionar</h1>
+        
+        <div class="row text-center">
+          <div class="col-4">
+            <label for="">México Km: 750km</label>
+           <select id="estados" class="form-control">
+             <option value="">Seleccionar</option>
+             <option value="1">México</option>
+             <option value="2">P.V.</option>
+             <option value="3">Acapulco</option>
+             <option value="4">Cancun</option>
+           </select>
+          </div>
+          <div class="col-4">
+            <label for="">Puerto Vallarta Km: 800km</label>
+          </div>
+          <div class="col-4">
+            <label for="">Acapulco Km: 1200km</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4">
+            <div class="form-group">
+              <label for="">Ingresa el km recorrido de ida:</label>
+              <input type="number" id="recorrido1" placeholder="Km de ida" class="form-control"> 
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="form-group">
+              <label for="">Ingresa el km recorrido de ida:</label>
+              <input type="number" id="recorrido2" placeholder="Km de ida" class="form-control"> 
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="form-group">
+              <label for="">Ingresa el km recorrido de ida:</label>
+              <input type="number" id="recorrido3" placeholder="Km de ida" class="form-control"> 
+            </div>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-4">
+            <div class="form-group">
+              <label for="">Ingresa el km recorrido de regreso:</label>
+              <input type="number" id="recorrido4" placeholder="Km de regreso" class="form-control"> 
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="form-group">
+              <label for="">Ingresa el km recorrido de regreso:</label>
+              <input type="number" id="recorrido5" placeholder="Km de regreso" class="form-control"> 
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="form-group">
+              <label for="">Ingresa el km recorrido de regreso:</label>
+              <input type="number" id="recorrido6" placeholder="Km de regreso" class="form-control"> 
+            </div>
+          </div>
+        </div>
+
+    <div class="row text-center">
+      <div class="col-12">
+        <label for="">Cancún Km: 1800km</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <div class="form-group">
+              <label for="">Ingresa el km recorrido de ida:</label>
+              <input type="number" id="recorrido7" placeholder="Km de ida" class="form-control"> 
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-group">
+              <label for="">Ingresa el km recorrido de regreso:</label>
+              <input type="number" id="recorrido8" placeholder="Km de ida" class="form-control"> 
+            </div>
+          </div>
+        </div>
+             
+        <div class="row">
+          <div class="col-12">
+            <button class="btn btn-outline-secondary btn-block" id="btncalcular">Calcular recorrido</button>
+          </div>
+        </div>
+        
+        <div id="imprimirrecorridos"></div>
+      </div>
+    </div>
+  </div>
+    <script src="./../Javascript/App.js"></script>
+  </body>
+</html>
