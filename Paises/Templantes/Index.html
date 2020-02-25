@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paises</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron mt-5">
+          <h1 class="text-center">Peso del paquete</h1>
+        <div class="row text-center mt-3">
+          <div class="col-6">
+            <div class="form-group">
+              <label for="">Ingresa el peso en (gramos) del paquete:</label>
+              <input
+                type="number"
+                placeholder="Digita el peso en (gramos) del paquete"
+                id="pesokm"
+                class="form-control"
+              />
+            </div>
+          </div>
+          <div class="col-6 text-center" mt-3>
+            <div class="form-roup">
+              <label for="">Selecciona un país</label>
+              <select id="seleccionarpais" class="form-control">
+                <option value="0">Seleccionar</option>
+                <option value="1">América del Norte</option>
+                <option value="2">América Cental</option>
+                <option value="3">América de Sur</option>
+                <option value="4">Europa</option>
+                <option value="5">Asia</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+          <div class="row">
+            <div class="col-12">
+              <button class="btn btn-outline-success btn-block" id="btncalcularcosto">Calcular peso del paquete</button>
+            </div>
+          </div>
+
+          <div id="imprimirkm"></div>
+      </div>
+    </div>
+    <script src="./../Javascript/App.js"></script>
+  </body>
+</html>
