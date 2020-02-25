@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seguro para autos</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron mt-5">
+        <h1 class="text-center">Seguros de autos</h1>
+        <div class="row text-center">
+          <div class="col-6">
+            <div class="form-group">
+              <label for="">Selecciona el tipo de póliza</label>
+              <select id="Tipopoliza" class="form-control">
+                <option value="1">A</option>
+                <option value="2">B</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-group">
+              <label for="">Selecciona la cuota base</label>
+              <select id="Cuotabase" class="form-control">
+                <option value="1">1200</option>
+                <option value="2">950</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-12">
+            <div class="form-group">
+              <label for="">Ingresa el tipo de persona</label>
+              <select id="Tipopersona" class="form-control">
+                <option value="1">Hábito de beber alcohol</option>
+                <option value="2">Utiliza lentes</option>
+                <option value="3">Padece de alguna enfermedad</option>
+                <option value="4">Persona de más de cuarenta años</option>
+                <option value="5">Persona de menos de cuarenta años</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <button class="btn btn-outline-info btn-block" id="btnpoliza">
+              Calcular precio uva
+            </button>
+          </div>
+        </div>
+
+        <div id="imprimircostoseguro"></div>
+      </div>
+    </div>
+    <script src="./../Javascript/App.js"></script>
+  </body>
+</html>
