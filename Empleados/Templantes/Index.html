@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Empleados</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron mt-5">
+        <h1 class="text-center">Bonos de un empleado</h1>
+        <div class="row text-center mt-3">
+          <div class="col-6">
+            <div class="form-group">
+              <label for="">Ingresa la antiguedad de un empleado</label>
+              <input
+                type="number"
+                placeholder="Digita la antiguedad de un empleado"
+                class="form-control"
+                id="antiguedademp"
+              />
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="form-group">
+              <label for="">Ingresa el sueldo de un empleado</label>
+              <input
+                type="number"
+                placeholder="Digita la antiguedad de un empleado"
+                class="form-control"
+                id="sueldoemp"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <button class="btn btn-outline-success btn-block" id="btnbonosant">Calcular bono antiguedad</button>
+              
+            </div>
+        </div>
+
+        <div id="calcularbonosant"></div>
+
+        
+      </div>
+    </div>
+    <script src="./../Javascript/App.js"></script>
+  </body>
+</html>
