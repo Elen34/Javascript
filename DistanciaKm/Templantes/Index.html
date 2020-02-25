@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recorrido KM</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron mt-5">
+        <h1 class="text-center">Recorrido distancia en km</h1>
+        <div class="text-center row mt-4">
+          <div class="col-6">
+            <div class="form-group">
+              <label for="">Ingresa el tipo de camión</label>
+              <select id="tipocamion" class="form-control">
+                <option value="1">A</option>
+                <option value="2">B</option>
+                <option value="3">C</option>
+                <option value="4">D</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-group">
+              <label for="">Ingresa el numero de persona</label>
+              <input type="number" id="numpersonas" class="form-control"/>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center row">
+          <div class="col-12">
+            <div class="form-group">
+              <label for="">Ingresa los kilometros de viaje</label>
+              <input type="number" id="kmviajes" class="form-control"/>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <button class="btn btn-outline-success btn-block" id="btncalcular">
+              Calcular costo total
+            </button>
+          </div>
+        </div>
+
+        <div id="imprimircostototal"></div>
+      </div>
+    </div>
+    <script src="./../Javascript/App.js"></script>
+  </body>
+</html>
