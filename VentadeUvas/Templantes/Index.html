@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Venta de Uvas</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+      <div class="container">
+          <div class="jumbotron mt-5">
+              <h1 class="text-center">Precio de uvas</h1>
+            <div class="row text-center mt-4">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="">Selecciona el tipo de uva</label>
+                        <select id="TipoUva" class="form-control">
+                            <option value="1">A</option>
+                            <option value="2">B</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="">Selecciona el tamaño de la uva</label>
+                        <select id="TamañoUva" class="form-control">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-12">
+                    <div class="form-group">
+                        <label for="">Ingresa el precio inicial de la uva</label>
+                        <input type="number" id="precio" placeholder="Digita el precio inicial" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <button class="btn btn-outline-info btn-block" id="btnprecio">Calcular precio uva</button>
+                </div>                
+            </div>
+
+            <div id="imprimirpreciouva"></div>
+          </div>
+      </div>
+      <script src="./../Javascript/App.js"></script>
+  </body>
+</html>
