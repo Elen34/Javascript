@@ -11,6 +11,7 @@ function calcularfibonacci(){
     let cantnumero = Number(prompt('Números de interacciones'));
     let numerox = 0, numeroy = 1, resultado=0;
     let imprimirresultado = document.getElementById('listas');
+    imprimirresultado.innerHTML = '';
 
     for(let i=1; i<=cantnumero; i++){
 
