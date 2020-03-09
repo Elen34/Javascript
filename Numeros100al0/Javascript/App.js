@@ -9,9 +9,8 @@ evenlistened();
 
 function Contarnumeros(){
 
-    const Numero = 100;
-
     let imprimir = document.getElementById('Imprimirlist');
+    imprimir = innerText = '';
     
     for(let i=100; i>=0; i--){
     
