@@ -74,11 +74,10 @@ function fillArray(tamanoArray){
            
             sumaarreglo += ArregloNumerosPrimos[i];
 
-
             if(Numeromayor < ArregloNumerosPrimos[i]){
 
                 Numeromayor = ArregloNumerosPrimos[i];
-                
+
                 }
             } 
 
