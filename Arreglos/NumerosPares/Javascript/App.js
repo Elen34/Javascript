@@ -1,8 +1,7 @@
 let ArrayPrincipal = [];
-let ArregloPares = 0;
+let ArregloPares = [];
 
 let listaimprimir = document.getElementById('listaimprimir'); 
-
 let listaimprimir2 = document.getElementById('listaimprimirpares'); 
 
 EventListener();
@@ -47,10 +46,9 @@ function Mostrarnumeros(TamanoArray){
         lista.setAttribute('class', 'list-group-item');
         lista.innerText = ArrayPrincipal;
         listaimprimir.appendChild(lista);
-    
     }
 
-    ObtenerPares(ArrayPrincipal);
+    ObtenerPares(TamanoArray);
 }
 
 function ObtenerPares(Pares){
@@ -59,14 +57,18 @@ function ObtenerPares(Pares){
 
         if(ArrayPrincipal[y] % 2 == 0){
 
-           ArregloPares.push(Math.floor(Math.random() * (101 - 1)) + 1);  
+            ArregloPares.push(ArrayPrincipal[y]);
 
             const lista = document.createElement('li');
-            lista.setAttribute('class', 'list-group-item m-2');
+            lista.setAttribute('class', 'list-group-item');
             lista.innerText = ArregloPares;
             listaimprimir2.appendChild(lista);
+            
         }
+        
     }    
 
-    console.log(ArregloPares);
 }
+
+
+           
